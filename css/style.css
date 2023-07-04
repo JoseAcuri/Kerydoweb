@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 :root{
-    --main-color: #fde403;
+    --main-color: #2cb8f0;
     --second-color:#fff;
 }
 section{
@@ -43,6 +43,13 @@ header{
     padding: 15px 10%;
     transition: 0.2s;   
 }
+.icono{
+    font-family: 'edo';
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
 .logo{
     display: flex;
     align-items: center;
@@ -65,11 +72,22 @@ header{
 .navbar a:hover{
     color: var(--main-color);
 }
+/*check-menu*/
+#checkbox-menu, label.menu{
+    display: none;   
+}
+.fa-solid{
+    margin-right:10px;
+}
+.fa-bars{
+    margin-left: 100px;
+}
 #menu-icon{
     font-size: 24px;
     cursor: pointer;
     z-index: 1001;
     display: none;
+    color: #fff;
 }
 .home{
     width: 100%;
@@ -134,6 +152,12 @@ header{
     color: #fff;
     background: var(--second-color);
 
+}
+/*seccion musica*/
+.musica{
+    background-image: url(../media/kerydofondo2.png);
+    background-size: cover;
+    padding: 10%;
 }
 /*footer*/
 footer {
