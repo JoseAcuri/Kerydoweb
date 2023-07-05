@@ -160,6 +160,64 @@ header{
     background-size: cover;
     padding: 10%;
 }
+/*seccion conocenos*/
+.miembro-uno{
+    background-image: url(../media/fondoinicio.jpg);
+    background-size: cover;
+    padding: 25%;
+    text-align: center;
+}
+.miembro-dos{
+    background-image: url(../media/chango3.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.miembro-cinco{
+    background-image: url(../media/DSC_0180.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.miembro-seis{
+    background-image: url(../media/DSC_0181.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.text-anibal{
+    font-family: 'edo';
+    color: #fff;
+}
+.text-carla{
+    font-family: 'edo';
+    color: #fff;
+}
+.text-ricki{
+    font-family: 'edo';
+    color: #fff;
+}
+.text-ile{
+    font-family: 'edo';
+    color: #fff;
+}
+.text-gonzalo{
+    font-family: 'edo';
+    color: #fff;
+}
+.miembro-tres{
+    background-image: url(../media/DSC_0076.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.miembro-cuatro{
+    background-image: url(../media/ricki.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.conocenos-text{
+    font-family: 'edo';
+    color: #fff;
+    margin-top: -30%;
+    font-size: 130%;
+}
 /*footer*/
 footer {
     background-color: rgb(0, 0, 0);
