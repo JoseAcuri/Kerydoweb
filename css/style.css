@@ -43,7 +43,7 @@ header{
     padding: 15px 10%;
     transition: 0.2s;   
 }
-.icono{
+.icono {
     font-family: 'edo';
     font-size: 30px;
     text-decoration: none;
@@ -101,6 +101,7 @@ header{
 }
 .home-text{
     flex: 1 1 17rem;
+    margin-right: 30%;
 }
 .home-img{
     flex: 1 1 17rem;
@@ -168,32 +169,114 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
-  }
-  
-  .container {
+}
+.container {
     max-width: 960px;
     margin: 0 auto;
-  }
-  
-  
-  .contact-info p {
+}
+.contact-info p {
     margin: 5px 0;
-  }
-  
-  
-  
-  .container {
+} 
+.container {
     max-width: 960px;
     margin: 0 auto;
-  }
-  
+}
   .social-icons a {
     color: #fff;
     font-size: 20px;
     margin: 0 10px;
     text-decoration: none;
-  }
-  
-  .social-icons a:hover {
+} 
+.social-icons a:hover {
     color: #aaa;
-  }
+}
+/*query de menu*/
+@media screen and (max-width:768px) {
+    .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 25%;
+    background-color: #000000;
+    border: #fff 2px solid;
+}
+    
+label.menu {
+    display: block;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+#checkbox-menu:checked ~ ul {
+    display: block;
+}
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 62%;
+    margin-top: 30%;
+    background-color: #000000;
+    border: #fff 2px solid;
+}
+    
+label.menu {
+    display: block;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+#checkbox-menu:checked ~ ul {
+    display: block;
+}
+}
+@media screen and (max-width:400px) {
+    .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 45%;
+    background-color: #000000;
+    border: #fff 2px solid;
+}
+    
+label.menu {
+    display: block;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+#checkbox-menu:checked ~ ul {
+    display: block;
+}
+}
+@media screen and (max-width:360px) {
+    .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 48%;
+    background-color: #000000;
+    border: #fff 2px solid;
+}
+    
+label.menu {
+    display: block;
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+#checkbox-menu:checked ~ ul {
+    display: block;
+}
+}
