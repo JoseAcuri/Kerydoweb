@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <title>Kerydo</title>
 </head>
 <body>
     
     <header>
-        <a href="#" class="logo"><h1 class="icono">KERYDO</h1></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="./index.html" class="logo-icono"><h1 class="icono">KERYDO</h1></a>
 
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu" class="menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+        <nav class="navbar navbar-expand-lg">
+            
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu" class="menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
 
-        <ul class="navbar">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./musica.html">Musica</a></li>
-            <li><a href="./conocenos.html">Conocenos</a></li>
-            <li><a href="./contactanos.html">Contactanos</a></li>
-            <li><a href="https://www.youtube.com/@kerydomusica">Videos</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-        </ul>
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./musica.html">Musica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/@kerydomusica">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tienda.html">Tienda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 <!-- home -->
 <section class="home" id="home">
@@ -33,7 +52,7 @@
         <span>Bienvenidos a</span>
         <h1>Kerydo Oficial</h1>
         <h2>Esperamos que  disfruten  <br>de nuestra musica</h2>
-        <a href="#" class="btn">Kerydo</a>
+        
     </div>
     <div class="home-img">
         <img src="./media/Proyectonuevo.png" alt="">
@@ -65,6 +84,6 @@
     </div>
 </footer>
 
-
+<script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
