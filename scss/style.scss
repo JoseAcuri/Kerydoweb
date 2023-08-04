@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family:'edo';
+    src: url(../fonts/edo.ttf);
+}
+@font-face {
+    font-family:'bodoni';
+    src: url(../fonts/bodoni.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #2cb8f0;
+    --second-color:#fff;
+}
+section{
+    padding: 50px 10%;    
+}
+/*pagina inicio*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    
+    padding: 15px 10%;
+    transition: 0.2s;   
+    .logo-icono{
+    font-family: 'edo';
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    }
+    .navbar{
+        text-align: right;
+    }
+    .navbar-nav{
+    background-color: #000000;
+    font-family: 'edo';
+    font-size: 110%;
+    a{
+        color: #fff;
+    }
+    }
+    .navbar-nav a:hover {
+    color: #e8f1f5;
+    }
+}
+.home{
+    width: 100%;
+    min-block-size: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../media/chango2.jpg);
+    background-size: cover;
+    gap: 1rem;
+    
+    h1{
+        font-size: 3.2rem;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'bodoni';
+    }
+    h2{
+        font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+    font-family: 'bodoni';
+    }
+    span{
+        font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+    font-family: 'bodoni';
+    }
+    text{
+        flex: 1 1 17rem;
+    }
+    img{
+        flex: 1 1 17rem;
+    }
+    .home-img img{
+        animation: animate 3s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            transform: translate(-11px, 0);
+        }
+        50%{
+            transform: translate(-0px, -11px);
+        }
+        100%{
+            transform: translate(-11px, 0);
+        }
+    }
+}
+@media (max-width: 1040px){
+    header{
+        padding: 100px 20px;
+    }
+    section .home{
+        padding: 100px 20px;
+    }
+    .container-fluid{
+        display: none;
+    }
+}
+/*Pagina musica*/
+.musica{
+    background-image: url(../media/kerydofondo2.png);
+    background-size: cover;
+    padding: 10%;
+}
+/*pagina conocenos*/
+
+.miembro-uno{
+    background-image: url(../media/fondoinicio.jpg);
+    background-size: cover;
+    padding: 25%;
+    text-align: center;
+    width: 100%;
+    .conocenos-text{
+        font-family: 'edo';
+        color: #fff;
+        margin-top: -30%;
+        font-size: 130%;
+    }
+    }
+.miembro-dos{
+    background-image: url(../media/chango3.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.miembro-tres{
+    background-image: url(../media/DSC_0076.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.miembro-cuatro{
+    background-image: url(../media/ricki.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.miembro-cinco{
+    background-image: url(../media/DSC_0180.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.miembro-seis{
+    background-image: url(../media/DSC_0181.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.text-anibal,
+.text-carla,
+.text-ricki,
+.text-ile,
+.text-gonzalo {
+    font-family: 'edo';
+    color: #fff;
+}
+/*pagina contactanos*/
+
+.contactanos {
+    background-image: url(../media/chango3.jpg);
+    background-size: cover;
+      background-position: center;
+      height: 800px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 200px;
+} 
+.contact-form {
+    font-family: 'edo';
+    max-width: 60%;
+    margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border-color: #fff;
+    color: #fff;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255); 
+    border-color: #fff;
+}
+
+/* footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.contact-info p {
+    margin: 5px 0;
+} 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+} 
+.social-icons a:hover {
+    color: #aaa;
+}
+/* Estilos para el menú */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo-icono h1 {
+    margin: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+/* Estilos para el menú responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+
